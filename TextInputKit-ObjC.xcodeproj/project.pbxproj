@@ -20,9 +20,12 @@
 		7C81FB0D1F530B2C00878B0C /* TITextInputEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB0B1F530B2C00878B0C /* TITextInputEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C81FB0E1F530B2C00878B0C /* TITextInputEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */; };
 		7C81FB161F53525100878B0C /* TIEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB141F53487C00878B0C /* TIEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB1D1F5360C000878B0C /* TITextInputEventNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB1B1F5360C000878B0C /* TITextInputEventNotifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB1E1F5360C000878B0C /* TITextInputEventNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB1C1F5360C000878B0C /* TITextInputEventNotifier.m */; };
 		7C81FB351F53644200878B0C /* TextInputKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C81FB2C1F53644200878B0C /* TextInputKit.framework */; };
 		7C81FB441F53648400878B0C /* TITextInputBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB081F530A8F00878B0C /* TITextInputBinding.m */; };
 		7C81FB451F53648400878B0C /* TITextInputEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */; };
+		7C81FB461F53648400878B0C /* TITextInputEventNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB1C1F5360C000878B0C /* TITextInputEventNotifier.m */; };
 		7C81FB491F53648400878B0C /* TIFormatterObjectValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FAFC1F52F98300878B0C /* TIFormatterObjectValue.m */; };
 		7C81FB4A1F53648400878B0C /* TITextInputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37251F4438C700271642 /* TITextInputFormat.m */; };
 		7C81FB4B1F53648400878B0C /* TITextInputFormat+Bind.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37311F44B0E000271642 /* TITextInputFormat+Bind.m */; };
@@ -49,6 +52,7 @@
 		7C81FB601F53648400878B0C /* TIObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37171F44329D00271642 /* TIObjectCache.m */; };
 		7C81FB631F5364CE00878B0C /* TITextInputBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB071F530A8F00878B0C /* TITextInputBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C81FB641F5364CE00878B0C /* TITextInputEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB0B1F530B2C00878B0C /* TITextInputEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB651F5364CE00878B0C /* TITextInputEventNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB1B1F5360C000878B0C /* TITextInputEventNotifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C81FB681F5364CE00878B0C /* TIFormatterObjectValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FAFB1F52F98300878B0C /* TIFormatterObjectValue.h */; };
 		7C81FB691F5364CE00878B0C /* TITextInputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37241F4438C700271642 /* TITextInputFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C81FB6A1F5364CE00878B0C /* TITextInputFormat+Bind.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37301F44B0E000271642 /* TITextInputFormat+Bind.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -156,6 +160,8 @@
 		7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TITextInputEvent.m; sourceTree = "<group>"; };
 		7C81FB141F53487C00878B0C /* TIEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIEnum.h; sourceTree = "<group>"; };
 		7C81FB151F5348C100878B0C /* TIMetaMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMetaMacro.h; sourceTree = "<group>"; };
+		7C81FB1B1F5360C000878B0C /* TITextInputEventNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TITextInputEventNotifier.h; sourceTree = "<group>"; };
+		7C81FB1C1F5360C000878B0C /* TITextInputEventNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TITextInputEventNotifier.m; sourceTree = "<group>"; };
 		7C81FB2C1F53644200878B0C /* TextInputKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextInputKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C81FB341F53644200878B0C /* Tests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C81FB871F53672500878B0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -377,6 +383,8 @@
 				7C81FB081F530A8F00878B0C /* TITextInputBinding.m */,
 				7C81FB0B1F530B2C00878B0C /* TITextInputEvent.h */,
 				7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */,
+				7C81FB1B1F5360C000878B0C /* TITextInputEventNotifier.h */,
+				7C81FB1C1F5360C000878B0C /* TITextInputEventNotifier.m */,
 			);
 			name = TextInputBinding;
 			sourceTree = "<group>";
@@ -451,6 +459,7 @@
 			files = (
 				7C81FB631F5364CE00878B0C /* TITextInputBinding.h in Headers */,
 				7C81FB641F5364CE00878B0C /* TITextInputEvent.h in Headers */,
+				7C81FB651F5364CE00878B0C /* TITextInputEventNotifier.h in Headers */,
 				7C81FB691F5364CE00878B0C /* TITextInputFormat.h in Headers */,
 				7C81FB6A1F5364CE00878B0C /* TITextInputFormat+Bind.h in Headers */,
 				7C81FB6B1F5364CE00878B0C /* TITextInputFormat+Filter.h in Headers */,
@@ -489,6 +498,7 @@
 				7CDF370B1F4431B500271642 /* TextInputKit-ObjC.h in Headers */,
 				7C81FB091F530A8F00878B0C /* TITextInputBinding.h in Headers */,
 				7C81FB0D1F530B2C00878B0C /* TITextInputEvent.h in Headers */,
+				7C81FB1D1F5360C000878B0C /* TITextInputEventNotifier.h in Headers */,
 				7CDF37261F4438C700271642 /* TITextInputFormat.h in Headers */,
 				7CDF37321F44B0E000271642 /* TITextInputFormat+Bind.h in Headers */,
 				7CDF37361F44B0EE00271642 /* TITextInputFormat+Filter.h in Headers */,
@@ -679,6 +689,7 @@
 			files = (
 				7C81FB441F53648400878B0C /* TITextInputBinding.m in Sources */,
 				7C81FB451F53648400878B0C /* TITextInputEvent.m in Sources */,
+				7C81FB461F53648400878B0C /* TITextInputEventNotifier.m in Sources */,
 				7C81FB491F53648400878B0C /* TIFormatterObjectValue.m in Sources */,
 				7C81FB4A1F53648400878B0C /* TITextInputFormat.m in Sources */,
 				7C81FB4B1F53648400878B0C /* TITextInputFormat+Bind.m in Sources */,
@@ -742,6 +753,7 @@
 				7C81FB021F53068800878B0C /* TIError.m in Sources */,
 				7CDF372F1F44394500271642 /* TITextInputFormatter.m in Sources */,
 				7CDF375C1F45CDF800271642 /* TITextInputSerializer+Formatter.m in Sources */,
+				7C81FB1E1F5360C000878B0C /* TITextInputEventNotifier.m in Sources */,
 				7C81FAFE1F52F98300878B0C /* TIFormatterObjectValue.m in Sources */,
 				7CDF374B1F44B12800271642 /* TITextInputFormats.m in Sources */,
 			);
