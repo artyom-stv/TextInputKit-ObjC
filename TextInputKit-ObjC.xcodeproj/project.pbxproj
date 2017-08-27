@@ -78,6 +78,8 @@
 		7C81FB821F5364CE00878B0C /* TIObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37161F44329D00271642 /* TIObjectCache.h */; };
 		7C81FB831F5364E400878B0C /* TIMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37501F44F21000271642 /* TIMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C81FB841F5364E400878B0C /* TIMetaMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB151F5348C100878B0C /* TIMetaMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB911F536B7700878B0C /* NSWindow+TextInputKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB8F1F536B7700878B0C /* NSWindow+TextInputKit.h */; };
+		7C81FB921F536B7700878B0C /* NSWindow+TextInputKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB901F536B7700878B0C /* NSWindow+TextInputKit.m */; };
 		7CDF37041F4431B500271642 /* TextInputKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDF36FA1F4431B500271642 /* TextInputKit.framework */; };
 		7CDF370B1F4431B500271642 /* TextInputKit-ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF36FD1F4431B500271642 /* TextInputKit-ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37181F44329D00271642 /* TIObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37161F44329D00271642 /* TIObjectCache.h */; };
@@ -157,6 +159,8 @@
 		7C81FB2C1F53644200878B0C /* TextInputKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextInputKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C81FB341F53644200878B0C /* Tests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C81FB871F53672500878B0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C81FB8F1F536B7700878B0C /* NSWindow+TextInputKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+TextInputKit.h"; sourceTree = "<group>"; };
+		7C81FB901F536B7700878B0C /* NSWindow+TextInputKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+TextInputKit.m"; sourceTree = "<group>"; };
 		7CDF36FA1F4431B500271642 /* TextInputKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextInputKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDF36FD1F4431B500271642 /* TextInputKit-ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextInputKit-ObjC.h"; sourceTree = "<group>"; };
 		7CDF36FE1F4431B500271642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -247,6 +251,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		7C81FB8D1F536B4200878B0C /* AppKitCategories */ = {
+			isa = PBXGroup;
+			children = (
+				7C81FB8F1F536B7700878B0C /* NSWindow+TextInputKit.h */,
+				7C81FB901F536B7700878B0C /* NSWindow+TextInputKit.m */,
+			);
+			name = AppKitCategories;
+			sourceTree = "<group>";
+		};
 		7C81FB8E1F536B4D00878B0C /* FoundationCategories */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +316,7 @@
 		7CDF37151F44327300271642 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7C81FB8D1F536B4200878B0C /* AppKitCategories */,
 				7C81FB8E1F536B4D00878B0C /* FoundationCategories */,
 				7C81FAF71F52ED5300878B0C /* NSRangeExtensions.h */,
 				7C81FAF81F52ED5300878B0C /* NSRangeExtensions.m */,
@@ -458,6 +472,7 @@
 				7C81FB7B1F5364CE00878B0C /* TITextInputSerializer+Map.h in Headers */,
 				7C81FB7E1F5364CE00878B0C /* TIEnum.h in Headers */,
 				7C81FB7F1F5364CE00878B0C /* TIError.h in Headers */,
+				7C81FB911F536B7700878B0C /* NSWindow+TextInputKit.h in Headers */,
 				7C81FB801F5364CE00878B0C /* TIMacro.h in Headers */,
 				7C81FB811F5364CE00878B0C /* TIMetaMacro.h in Headers */,
 				7C81FB681F5364CE00878B0C /* TIFormatterObjectValue.h in Headers */,
@@ -670,6 +685,7 @@
 				7C81FB4C1F53648400878B0C /* TITextInputFormat+Filter.m in Sources */,
 				7C81FB4D1F53648400878B0C /* TITextInputFormat+Formatter.m in Sources */,
 				7C81FB4E1F53648400878B0C /* TITextInputFormat+From.m in Sources */,
+				7C81FB921F536B7700878B0C /* NSWindow+TextInputKit.m in Sources */,
 				7C81FB4F1F53648400878B0C /* TITextInputFormat+Map.m in Sources */,
 				7C81FB501F53648400878B0C /* TITextInputFormat+TransformValue.m in Sources */,
 				7C81FB511F53648400878B0C /* TITextInputFormats.m in Sources */,
