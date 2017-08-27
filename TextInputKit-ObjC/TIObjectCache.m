@@ -59,8 +59,7 @@
     _weakObject = object;
     if (object) {
         [self.cache setObject:object forKey:self.cacheKey];
-    }
-    else {
+    } else {
         [self.cache removeAllObjects];
     }
 }

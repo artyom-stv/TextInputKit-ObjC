@@ -69,8 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
     id const value = objectValue.value;
     if (value) {
         return [self.format.serializer stringForValue:value];
-    }
-    else {
+    } else {
         return objectValue.text;
     }
 }
