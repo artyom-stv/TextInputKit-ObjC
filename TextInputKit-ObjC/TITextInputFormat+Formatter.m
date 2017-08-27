@@ -11,6 +11,10 @@
 #import "TITextInputFormatter.h"
 #import "TITextInputSerializer.h"
 
+#if TARGET_OS_OSX
+#import "NSWindow+TextInputKit.h"
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation TIFormatterOptions
@@ -117,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
         if (self.options.tracksCurrentEditorSelection) {
             let editor = [NSApplication sharedApplication].keyWindow.ti_currentEditor;
             if (editor) {
-                range = editor.ti_selectedRange
+                range = editor.selectedRange;
             }
         }
 #endif
