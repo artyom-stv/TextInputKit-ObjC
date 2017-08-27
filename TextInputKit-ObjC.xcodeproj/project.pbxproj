@@ -20,16 +20,73 @@
 		7C81FB0D1F530B2C00878B0C /* TITextInputEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB0B1F530B2C00878B0C /* TITextInputEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C81FB0E1F530B2C00878B0C /* TITextInputEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */; };
 		7C81FB161F53525100878B0C /* TIEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB141F53487C00878B0C /* TIEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB351F53644200878B0C /* TextInputKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C81FB2C1F53644200878B0C /* TextInputKit.framework */; };
+		7C81FB441F53648400878B0C /* TITextInputBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB081F530A8F00878B0C /* TITextInputBinding.m */; };
+		7C81FB451F53648400878B0C /* TITextInputEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */; };
+		7C81FB491F53648400878B0C /* TIFormatterObjectValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FAFC1F52F98300878B0C /* TIFormatterObjectValue.m */; };
+		7C81FB4A1F53648400878B0C /* TITextInputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37251F4438C700271642 /* TITextInputFormat.m */; };
+		7C81FB4B1F53648400878B0C /* TITextInputFormat+Bind.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37311F44B0E000271642 /* TITextInputFormat+Bind.m */; };
+		7C81FB4C1F53648400878B0C /* TITextInputFormat+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37351F44B0EE00271642 /* TITextInputFormat+Filter.m */; };
+		7C81FB4D1F53648400878B0C /* TITextInputFormat+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37391F44B0F700271642 /* TITextInputFormat+Formatter.m */; };
+		7C81FB4E1F53648400878B0C /* TITextInputFormat+From.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF373D1F44B10300271642 /* TITextInputFormat+From.m */; };
+		7C81FB4F1F53648400878B0C /* TITextInputFormat+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37411F44B10A00271642 /* TITextInputFormat+Map.m */; };
+		7C81FB501F53648400878B0C /* TITextInputFormat+TransformValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37451F44B11600271642 /* TITextInputFormat+TransformValue.m */; };
+		7C81FB511F53648400878B0C /* TITextInputFormats.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37491F44B12800271642 /* TITextInputFormats.m */; };
+		7C81FB521F53648400878B0C /* TITextInputFormats+Plain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF374D1F44B13600271642 /* TITextInputFormats+Plain.m */; };
+		7C81FB531F53648400878B0C /* TITextInputAccessoryFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF376E1F460B0100271642 /* TITextInputAccessoryFormatter.m */; };
+		7C81FB541F53648400878B0C /* TITextInputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF372D1F44394500271642 /* TITextInputFormatter.m */; };
+		7C81FB551F53648400878B0C /* TITextInputFormatter+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37621F4609BD00271642 /* TITextInputFormatter+Filter.m */; };
+		7C81FB561F53648400878B0C /* TITextInputFormatter+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37661F4609C900271642 /* TITextInputFormatter+Map.m */; };
+		7C81FB571F53648400878B0C /* TITextInputFormatter+Plain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF375E1F45E7F300271642 /* TITextInputFormatter+Plain.m */; };
+		7C81FB581F53648400878B0C /* TITextInputFormatter+Succeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF376A1F4609DB00271642 /* TITextInputFormatter+Succeed.m */; };
+		7C81FB591F53648400878B0C /* TITextInputSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37291F44392F00271642 /* TITextInputSerializer.m */; };
+		7C81FB5A1F53648400878B0C /* TITextInputSerializer+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF375A1F45CDF800271642 /* TITextInputSerializer+Formatter.m */; };
+		7C81FB5B1F53648400878B0C /* TITextInputSerializer+Identical.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37521F45CD1900271642 /* TITextInputSerializer+Identical.m */; };
+		7C81FB5C1F53648400878B0C /* TITextInputSerializer+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37561F45CDEA00271642 /* TITextInputSerializer+Map.m */; };
+		7C81FB5D1F53648400878B0C /* NSError+TextInputKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB041F530A3300878B0C /* NSError+TextInputKit.m */; };
+		7C81FB5E1F53648400878B0C /* NSRangeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FAF81F52ED5300878B0C /* NSRangeExtensions.m */; };
+		7C81FB5F1F53648400878B0C /* TIError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81FB001F53068800878B0C /* TIError.m */; };
+		7C81FB601F53648400878B0C /* TIObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37171F44329D00271642 /* TIObjectCache.m */; };
+		7C81FB631F5364CE00878B0C /* TITextInputBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB071F530A8F00878B0C /* TITextInputBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB641F5364CE00878B0C /* TITextInputEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB0B1F530B2C00878B0C /* TITextInputEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB681F5364CE00878B0C /* TIFormatterObjectValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FAFB1F52F98300878B0C /* TIFormatterObjectValue.h */; };
+		7C81FB691F5364CE00878B0C /* TITextInputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37241F4438C700271642 /* TITextInputFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB6A1F5364CE00878B0C /* TITextInputFormat+Bind.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37301F44B0E000271642 /* TITextInputFormat+Bind.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB6B1F5364CE00878B0C /* TITextInputFormat+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37341F44B0EE00271642 /* TITextInputFormat+Filter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB6C1F5364CE00878B0C /* TITextInputFormat+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37381F44B0F700271642 /* TITextInputFormat+Formatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB6D1F5364CE00878B0C /* TITextInputFormat+From.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF373C1F44B10300271642 /* TITextInputFormat+From.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB6E1F5364CE00878B0C /* TITextInputFormat+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37401F44B10A00271642 /* TITextInputFormat+Map.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB6F1F5364CE00878B0C /* TITextInputFormat+TransformValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37441F44B11600271642 /* TITextInputFormat+TransformValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB701F5364CE00878B0C /* TITextInputFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37481F44B12800271642 /* TITextInputFormats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB711F5364CE00878B0C /* TITextInputFormats+Plain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF374C1F44B13600271642 /* TITextInputFormats+Plain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB721F5364CE00878B0C /* TITextInputAccessoryFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF376D1F460B0100271642 /* TITextInputAccessoryFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB731F5364CE00878B0C /* TITextInputFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF372C1F44394500271642 /* TITextInputFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB741F5364CE00878B0C /* TITextInputFormatter+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37611F4609BD00271642 /* TITextInputFormatter+Filter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB751F5364CE00878B0C /* TITextInputFormatter+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37651F4609C900271642 /* TITextInputFormatter+Map.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB761F5364CE00878B0C /* TITextInputFormatter+Plain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF375D1F45E7F300271642 /* TITextInputFormatter+Plain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB771F5364CE00878B0C /* TITextInputFormatter+Succeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37691F4609DB00271642 /* TITextInputFormatter+Succeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB781F5364CE00878B0C /* TITextInputSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37281F44392F00271642 /* TITextInputSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB791F5364CE00878B0C /* TITextInputSerializer+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37591F45CDF800271642 /* TITextInputSerializer+Formatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB7A1F5364CE00878B0C /* TITextInputSerializer+Identical.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37511F45CD1900271642 /* TITextInputSerializer+Identical.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB7B1F5364CE00878B0C /* TITextInputSerializer+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37551F45CDEA00271642 /* TITextInputSerializer+Map.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB7C1F5364CE00878B0C /* NSError+TextInputKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB031F530A3300878B0C /* NSError+TextInputKit.h */; };
+		7C81FB7D1F5364CE00878B0C /* NSRangeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FAF71F52ED5300878B0C /* NSRangeExtensions.h */; };
+		7C81FB7E1F5364CE00878B0C /* TIEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB141F53487C00878B0C /* TIEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB7F1F5364CE00878B0C /* TIError.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FAFF1F53068800878B0C /* TIError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB801F5364CE00878B0C /* TIMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37501F44F21000271642 /* TIMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB811F5364CE00878B0C /* TIMetaMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB151F5348C100878B0C /* TIMetaMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB821F5364CE00878B0C /* TIObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37161F44329D00271642 /* TIObjectCache.h */; };
+		7C81FB831F5364E400878B0C /* TIMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37501F44F21000271642 /* TIMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C81FB841F5364E400878B0C /* TIMetaMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81FB151F5348C100878B0C /* TIMetaMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37041F4431B500271642 /* TextInputKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDF36FA1F4431B500271642 /* TextInputKit.framework */; };
-		7CDF37091F4431B500271642 /* TextInputKit_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37081F4431B500271642 /* TextInputKit_ObjCTests.m */; };
 		7CDF370B1F4431B500271642 /* TextInputKit-ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF36FD1F4431B500271642 /* TextInputKit-ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37181F44329D00271642 /* TIObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37161F44329D00271642 /* TIObjectCache.h */; };
 		7CDF37191F44329D00271642 /* TIObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37171F44329D00271642 /* TIObjectCache.m */; };
 		7CDF37261F4438C700271642 /* TITextInputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37241F4438C700271642 /* TITextInputFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37271F4438C700271642 /* TITextInputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37251F4438C700271642 /* TITextInputFormat.m */; };
-		7CDF372A1F44392F00271642 /* TITextInputSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37281F44392F00271642 /* TITextInputSerializer.h */; };
+		7CDF372A1F44392F00271642 /* TITextInputSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37281F44392F00271642 /* TITextInputSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF372B1F44392F00271642 /* TITextInputSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37291F44392F00271642 /* TITextInputSerializer.m */; };
-		7CDF372E1F44394500271642 /* TITextInputFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF372C1F44394500271642 /* TITextInputFormatter.h */; };
+		7CDF372E1F44394500271642 /* TITextInputFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF372C1F44394500271642 /* TITextInputFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF372F1F44394500271642 /* TITextInputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF372D1F44394500271642 /* TITextInputFormatter.m */; };
 		7CDF37321F44B0E000271642 /* TITextInputFormat+Bind.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37301F44B0E000271642 /* TITextInputFormat+Bind.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37331F44B0E000271642 /* TITextInputFormat+Bind.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37311F44B0E000271642 /* TITextInputFormat+Bind.m */; };
@@ -47,25 +104,32 @@
 		7CDF374B1F44B12800271642 /* TITextInputFormats.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37491F44B12800271642 /* TITextInputFormats.m */; };
 		7CDF374E1F44B13600271642 /* TITextInputFormats+Plain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF374C1F44B13600271642 /* TITextInputFormats+Plain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF374F1F44B13600271642 /* TITextInputFormats+Plain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF374D1F44B13600271642 /* TITextInputFormats+Plain.m */; };
-		7CDF37531F45CD1900271642 /* TITextInputSerializer+Identical.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37511F45CD1900271642 /* TITextInputSerializer+Identical.h */; };
+		7CDF37531F45CD1900271642 /* TITextInputSerializer+Identical.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37511F45CD1900271642 /* TITextInputSerializer+Identical.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37541F45CD1900271642 /* TITextInputSerializer+Identical.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37521F45CD1900271642 /* TITextInputSerializer+Identical.m */; };
-		7CDF37571F45CDEA00271642 /* TITextInputSerializer+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37551F45CDEA00271642 /* TITextInputSerializer+Map.h */; };
+		7CDF37571F45CDEA00271642 /* TITextInputSerializer+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37551F45CDEA00271642 /* TITextInputSerializer+Map.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37581F45CDEA00271642 /* TITextInputSerializer+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37561F45CDEA00271642 /* TITextInputSerializer+Map.m */; };
-		7CDF375B1F45CDF800271642 /* TITextInputSerializer+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37591F45CDF800271642 /* TITextInputSerializer+Formatter.h */; };
+		7CDF375B1F45CDF800271642 /* TITextInputSerializer+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37591F45CDF800271642 /* TITextInputSerializer+Formatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF375C1F45CDF800271642 /* TITextInputSerializer+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF375A1F45CDF800271642 /* TITextInputSerializer+Formatter.m */; };
-		7CDF375F1F45E7F300271642 /* TITextInputFormatter+Plain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF375D1F45E7F300271642 /* TITextInputFormatter+Plain.h */; };
+		7CDF375F1F45E7F300271642 /* TITextInputFormatter+Plain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF375D1F45E7F300271642 /* TITextInputFormatter+Plain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37601F45E7F300271642 /* TITextInputFormatter+Plain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF375E1F45E7F300271642 /* TITextInputFormatter+Plain.m */; };
-		7CDF37631F4609BD00271642 /* TITextInputFormatter+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37611F4609BD00271642 /* TITextInputFormatter+Filter.h */; };
+		7CDF37631F4609BD00271642 /* TITextInputFormatter+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37611F4609BD00271642 /* TITextInputFormatter+Filter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37641F4609BD00271642 /* TITextInputFormatter+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37621F4609BD00271642 /* TITextInputFormatter+Filter.m */; };
-		7CDF37671F4609C900271642 /* TITextInputFormatter+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37651F4609C900271642 /* TITextInputFormatter+Map.h */; };
+		7CDF37671F4609C900271642 /* TITextInputFormatter+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37651F4609C900271642 /* TITextInputFormatter+Map.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37681F4609C900271642 /* TITextInputFormatter+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF37661F4609C900271642 /* TITextInputFormatter+Map.m */; };
-		7CDF376B1F4609DB00271642 /* TITextInputFormatter+Succeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37691F4609DB00271642 /* TITextInputFormatter+Succeed.h */; };
+		7CDF376B1F4609DB00271642 /* TITextInputFormatter+Succeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF37691F4609DB00271642 /* TITextInputFormatter+Succeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF376C1F4609DB00271642 /* TITextInputFormatter+Succeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF376A1F4609DB00271642 /* TITextInputFormatter+Succeed.m */; };
-		7CDF376F1F460B0100271642 /* TITextInputAccessoryFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF376D1F460B0100271642 /* TITextInputAccessoryFormatter.h */; };
+		7CDF376F1F460B0100271642 /* TITextInputAccessoryFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF376D1F460B0100271642 /* TITextInputAccessoryFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CDF37701F460B0100271642 /* TITextInputAccessoryFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF376E1F460B0100271642 /* TITextInputAccessoryFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7C81FB361F53644200878B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CDF36F11F4431B500271642 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C81FB2B1F53644200878B0C;
+			remoteInfo = "TextInputKit-ObjC-macOS";
+		};
 		7CDF37051F4431B500271642 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7CDF36F11F4431B500271642 /* Project object */;
@@ -90,12 +154,13 @@
 		7C81FB0C1F530B2C00878B0C /* TITextInputEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TITextInputEvent.m; sourceTree = "<group>"; };
 		7C81FB141F53487C00878B0C /* TIEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIEnum.h; sourceTree = "<group>"; };
 		7C81FB151F5348C100878B0C /* TIMetaMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMetaMacro.h; sourceTree = "<group>"; };
+		7C81FB2C1F53644200878B0C /* TextInputKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextInputKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C81FB341F53644200878B0C /* Tests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C81FB871F53672500878B0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CDF36FA1F4431B500271642 /* TextInputKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextInputKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDF36FD1F4431B500271642 /* TextInputKit-ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextInputKit-ObjC.h"; sourceTree = "<group>"; };
 		7CDF36FE1F4431B500271642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CDF37031F4431B500271642 /* TextInputKit-ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TextInputKit-ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CDF37081F4431B500271642 /* TextInputKit_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextInputKit_ObjCTests.m; sourceTree = "<group>"; };
-		7CDF370A1F4431B500271642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDF37031F4431B500271642 /* Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDF37161F44329D00271642 /* TIObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIObjectCache.h; sourceTree = "<group>"; };
 		7CDF37171F44329D00271642 /* TIObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIObjectCache.m; sourceTree = "<group>"; };
 		7CDF371A1F44337500271642 /* TextInputKit-ObjC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextInputKit-ObjC.pch"; sourceTree = "<group>"; };
@@ -141,6 +206,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7C81FB281F53644200878B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C81FB311F53644200878B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C81FB351F53644200878B0C /* TextInputKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CDF36F61F4431B500271642 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,11 +239,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C81FB861F53672500878B0C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7C81FB871F53672500878B0C /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7C81FB8E1F536B4D00878B0C /* FoundationCategories */ = {
+			isa = PBXGroup;
+			children = (
+				7C81FB031F530A3300878B0C /* NSError+TextInputKit.h */,
+				7C81FB041F530A3300878B0C /* NSError+TextInputKit.m */,
+			);
+			name = FoundationCategories;
+			sourceTree = "<group>";
+		};
 		7CDF36F01F4431B500271642 = {
 			isa = PBXGroup;
 			children = (
 				7CDF36FC1F4431B500271642 /* TextInputKit-ObjC */,
-				7CDF37071F4431B500271642 /* TextInputKit-ObjCTests */,
+				7C81FB861F53672500878B0C /* Tests */,
 				7CDF36FB1F4431B500271642 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,7 +269,9 @@
 			isa = PBXGroup;
 			children = (
 				7CDF36FA1F4431B500271642 /* TextInputKit.framework */,
-				7CDF37031F4431B500271642 /* TextInputKit-ObjCTests.xctest */,
+				7CDF37031F4431B500271642 /* Tests-iOS.xctest */,
+				7C81FB2C1F53644200878B0C /* TextInputKit.framework */,
+				7C81FB341F53644200878B0C /* Tests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,15 +283,6 @@
 				7CDF36FE1F4431B500271642 /* Info.plist */,
 			);
 			path = "TextInputKit-ObjC";
-			sourceTree = "<group>";
-		};
-		7CDF37071F4431B500271642 /* TextInputKit-ObjCTests */ = {
-			isa = PBXGroup;
-			children = (
-				7CDF37081F4431B500271642 /* TextInputKit_ObjCTests.m */,
-				7CDF370A1F4431B500271642 /* Info.plist */,
-			);
-			path = "TextInputKit-ObjCTests";
 			sourceTree = "<group>";
 		};
 		7CDF37141F44320D00271642 /* Code */ = {
@@ -213,8 +303,7 @@
 		7CDF37151F44327300271642 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7C81FB031F530A3300878B0C /* NSError+TextInputKit.h */,
-				7C81FB041F530A3300878B0C /* NSError+TextInputKit.m */,
+				7C81FB8E1F536B4D00878B0C /* FoundationCategories */,
 				7C81FAF71F52ED5300878B0C /* NSRangeExtensions.h */,
 				7C81FAF81F52ED5300878B0C /* NSRangeExtensions.m */,
 				7C81FB141F53487C00878B0C /* TIEnum.h */,
@@ -342,47 +431,121 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7C81FB291F53644200878B0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C81FB631F5364CE00878B0C /* TITextInputBinding.h in Headers */,
+				7C81FB641F5364CE00878B0C /* TITextInputEvent.h in Headers */,
+				7C81FB691F5364CE00878B0C /* TITextInputFormat.h in Headers */,
+				7C81FB6A1F5364CE00878B0C /* TITextInputFormat+Bind.h in Headers */,
+				7C81FB6B1F5364CE00878B0C /* TITextInputFormat+Filter.h in Headers */,
+				7C81FB6C1F5364CE00878B0C /* TITextInputFormat+Formatter.h in Headers */,
+				7C81FB6D1F5364CE00878B0C /* TITextInputFormat+From.h in Headers */,
+				7C81FB6E1F5364CE00878B0C /* TITextInputFormat+Map.h in Headers */,
+				7C81FB6F1F5364CE00878B0C /* TITextInputFormat+TransformValue.h in Headers */,
+				7C81FB701F5364CE00878B0C /* TITextInputFormats.h in Headers */,
+				7C81FB711F5364CE00878B0C /* TITextInputFormats+Plain.h in Headers */,
+				7C81FB721F5364CE00878B0C /* TITextInputAccessoryFormatter.h in Headers */,
+				7C81FB731F5364CE00878B0C /* TITextInputFormatter.h in Headers */,
+				7C81FB741F5364CE00878B0C /* TITextInputFormatter+Filter.h in Headers */,
+				7C81FB751F5364CE00878B0C /* TITextInputFormatter+Map.h in Headers */,
+				7C81FB761F5364CE00878B0C /* TITextInputFormatter+Plain.h in Headers */,
+				7C81FB771F5364CE00878B0C /* TITextInputFormatter+Succeed.h in Headers */,
+				7C81FB781F5364CE00878B0C /* TITextInputSerializer.h in Headers */,
+				7C81FB791F5364CE00878B0C /* TITextInputSerializer+Formatter.h in Headers */,
+				7C81FB7A1F5364CE00878B0C /* TITextInputSerializer+Identical.h in Headers */,
+				7C81FB7B1F5364CE00878B0C /* TITextInputSerializer+Map.h in Headers */,
+				7C81FB7E1F5364CE00878B0C /* TIEnum.h in Headers */,
+				7C81FB7F1F5364CE00878B0C /* TIError.h in Headers */,
+				7C81FB801F5364CE00878B0C /* TIMacro.h in Headers */,
+				7C81FB811F5364CE00878B0C /* TIMetaMacro.h in Headers */,
+				7C81FB681F5364CE00878B0C /* TIFormatterObjectValue.h in Headers */,
+				7C81FB7C1F5364CE00878B0C /* NSError+TextInputKit.h in Headers */,
+				7C81FB7D1F5364CE00878B0C /* NSRangeExtensions.h in Headers */,
+				7C81FB821F5364CE00878B0C /* TIObjectCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CDF36F71F4431B500271642 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CDF375F1F45E7F300271642 /* TITextInputFormatter+Plain.h in Headers */,
-				7CDF376F1F460B0100271642 /* TITextInputAccessoryFormatter.h in Headers */,
-				7CDF374A1F44B12800271642 /* TITextInputFormats.h in Headers */,
-				7C81FAF91F52ED5300878B0C /* NSRangeExtensions.h in Headers */,
 				7CDF370B1F4431B500271642 /* TextInputKit-ObjC.h in Headers */,
-				7CDF372A1F44392F00271642 /* TITextInputSerializer.h in Headers */,
-				7CDF37261F4438C700271642 /* TITextInputFormat.h in Headers */,
-				7CDF373E1F44B10300271642 /* TITextInputFormat+From.h in Headers */,
-				7CDF37671F4609C900271642 /* TITextInputFormatter+Map.h in Headers */,
-				7CDF372E1F44394500271642 /* TITextInputFormatter.h in Headers */,
-				7C81FB161F53525100878B0C /* TIEnum.h in Headers */,
-				7C81FB051F530A3300878B0C /* NSError+TextInputKit.h in Headers */,
-				7C81FAFD1F52F98300878B0C /* TIFormatterObjectValue.h in Headers */,
-				7CDF375B1F45CDF800271642 /* TITextInputSerializer+Formatter.h in Headers */,
-				7CDF37361F44B0EE00271642 /* TITextInputFormat+Filter.h in Headers */,
-				7C81FB011F53068800878B0C /* TIError.h in Headers */,
-				7CDF373A1F44B0F700271642 /* TITextInputFormat+Formatter.h in Headers */,
-				7CDF374E1F44B13600271642 /* TITextInputFormats+Plain.h in Headers */,
-				7CDF37181F44329D00271642 /* TIObjectCache.h in Headers */,
-				7CDF376B1F4609DB00271642 /* TITextInputFormatter+Succeed.h in Headers */,
-				7CDF37321F44B0E000271642 /* TITextInputFormat+Bind.h in Headers */,
-				7CDF37571F45CDEA00271642 /* TITextInputSerializer+Map.h in Headers */,
-				7CDF37631F4609BD00271642 /* TITextInputFormatter+Filter.h in Headers */,
-				7CDF37421F44B10A00271642 /* TITextInputFormat+Map.h in Headers */,
-				7C81FB0D1F530B2C00878B0C /* TITextInputEvent.h in Headers */,
 				7C81FB091F530A8F00878B0C /* TITextInputBinding.h in Headers */,
+				7C81FB0D1F530B2C00878B0C /* TITextInputEvent.h in Headers */,
+				7CDF37261F4438C700271642 /* TITextInputFormat.h in Headers */,
+				7CDF37321F44B0E000271642 /* TITextInputFormat+Bind.h in Headers */,
+				7CDF37361F44B0EE00271642 /* TITextInputFormat+Filter.h in Headers */,
+				7CDF373A1F44B0F700271642 /* TITextInputFormat+Formatter.h in Headers */,
+				7CDF373E1F44B10300271642 /* TITextInputFormat+From.h in Headers */,
+				7CDF37421F44B10A00271642 /* TITextInputFormat+Map.h in Headers */,
 				7CDF37461F44B11600271642 /* TITextInputFormat+TransformValue.h in Headers */,
+				7CDF374A1F44B12800271642 /* TITextInputFormats.h in Headers */,
+				7CDF374E1F44B13600271642 /* TITextInputFormats+Plain.h in Headers */,
+				7CDF376F1F460B0100271642 /* TITextInputAccessoryFormatter.h in Headers */,
+				7CDF372E1F44394500271642 /* TITextInputFormatter.h in Headers */,
+				7CDF37631F4609BD00271642 /* TITextInputFormatter+Filter.h in Headers */,
+				7CDF37671F4609C900271642 /* TITextInputFormatter+Map.h in Headers */,
+				7CDF375F1F45E7F300271642 /* TITextInputFormatter+Plain.h in Headers */,
+				7CDF376B1F4609DB00271642 /* TITextInputFormatter+Succeed.h in Headers */,
+				7CDF372A1F44392F00271642 /* TITextInputSerializer.h in Headers */,
+				7CDF375B1F45CDF800271642 /* TITextInputSerializer+Formatter.h in Headers */,
 				7CDF37531F45CD1900271642 /* TITextInputSerializer+Identical.h in Headers */,
+				7CDF37571F45CDEA00271642 /* TITextInputSerializer+Map.h in Headers */,
+				7C81FB161F53525100878B0C /* TIEnum.h in Headers */,
+				7C81FB011F53068800878B0C /* TIError.h in Headers */,
+				7C81FB831F5364E400878B0C /* TIMacro.h in Headers */,
+				7C81FB841F5364E400878B0C /* TIMetaMacro.h in Headers */,
+				7C81FB051F530A3300878B0C /* NSError+TextInputKit.h in Headers */,
+				7C81FAF91F52ED5300878B0C /* NSRangeExtensions.h in Headers */,
+				7C81FAFD1F52F98300878B0C /* TIFormatterObjectValue.h in Headers */,
+				7CDF37181F44329D00271642 /* TIObjectCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7CDF36F91F4431B500271642 /* TextInputKit-ObjC */ = {
+		7C81FB2B1F53644200878B0C /* TextInputKit-ObjC-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CDF370E1F4431B500271642 /* Build configuration list for PBXNativeTarget "TextInputKit-ObjC" */;
+			buildConfigurationList = 7C81FB3D1F53644200878B0C /* Build configuration list for PBXNativeTarget "TextInputKit-ObjC-macOS" */;
+			buildPhases = (
+				7C81FB271F53644200878B0C /* Sources */,
+				7C81FB281F53644200878B0C /* Frameworks */,
+				7C81FB291F53644200878B0C /* Headers */,
+				7C81FB2A1F53644200878B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TextInputKit-ObjC-macOS";
+			productName = "TextInputKit-ObjC-macOS";
+			productReference = 7C81FB2C1F53644200878B0C /* TextInputKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C81FB331F53644200878B0C /* Tests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C81FB401F53644200878B0C /* Build configuration list for PBXNativeTarget "Tests-macOS" */;
+			buildPhases = (
+				7C81FB301F53644200878B0C /* Sources */,
+				7C81FB311F53644200878B0C /* Frameworks */,
+				7C81FB321F53644200878B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C81FB371F53644200878B0C /* PBXTargetDependency */,
+			);
+			name = "Tests-macOS";
+			productName = "TextInputKit-ObjC-macOSTests";
+			productReference = 7C81FB341F53644200878B0C /* Tests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CDF36F91F4431B500271642 /* TextInputKit-ObjC-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CDF370E1F4431B500271642 /* Build configuration list for PBXNativeTarget "TextInputKit-ObjC-iOS" */;
 			buildPhases = (
 				7CDF36F51F4431B500271642 /* Sources */,
 				7CDF36F61F4431B500271642 /* Frameworks */,
@@ -393,14 +556,14 @@
 			);
 			dependencies = (
 			);
-			name = "TextInputKit-ObjC";
+			name = "TextInputKit-ObjC-iOS";
 			productName = "TextInputKit-ObjC";
 			productReference = 7CDF36FA1F4431B500271642 /* TextInputKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7CDF37021F4431B500271642 /* TextInputKit-ObjCTests */ = {
+		7CDF37021F4431B500271642 /* Tests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CDF37111F4431B500271642 /* Build configuration list for PBXNativeTarget "TextInputKit-ObjCTests" */;
+			buildConfigurationList = 7CDF37111F4431B500271642 /* Build configuration list for PBXNativeTarget "Tests-iOS" */;
 			buildPhases = (
 				7CDF36FF1F4431B500271642 /* Sources */,
 				7CDF37001F4431B500271642 /* Frameworks */,
@@ -411,9 +574,9 @@
 			dependencies = (
 				7CDF37061F4431B500271642 /* PBXTargetDependency */,
 			);
-			name = "TextInputKit-ObjCTests";
+			name = "Tests-iOS";
 			productName = "TextInputKit-ObjCTests";
-			productReference = 7CDF37031F4431B500271642 /* TextInputKit-ObjCTests.xctest */;
+			productReference = 7CDF37031F4431B500271642 /* Tests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -425,6 +588,14 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Artem Starosvetskiy";
 				TargetAttributes = {
+					7C81FB2B1F53644200878B0C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					7C81FB331F53644200878B0C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					7CDF36F91F4431B500271642 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -447,13 +618,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7CDF36F91F4431B500271642 /* TextInputKit-ObjC */,
-				7CDF37021F4431B500271642 /* TextInputKit-ObjCTests */,
+				7CDF36F91F4431B500271642 /* TextInputKit-ObjC-iOS */,
+				7C81FB2B1F53644200878B0C /* TextInputKit-ObjC-macOS */,
+				7CDF37021F4431B500271642 /* Tests-iOS */,
+				7C81FB331F53644200878B0C /* Tests-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7C81FB2A1F53644200878B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C81FB321F53644200878B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CDF36F81F4431B500271642 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,6 +658,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C81FB271F53644200878B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C81FB441F53648400878B0C /* TITextInputBinding.m in Sources */,
+				7C81FB451F53648400878B0C /* TITextInputEvent.m in Sources */,
+				7C81FB491F53648400878B0C /* TIFormatterObjectValue.m in Sources */,
+				7C81FB4A1F53648400878B0C /* TITextInputFormat.m in Sources */,
+				7C81FB4B1F53648400878B0C /* TITextInputFormat+Bind.m in Sources */,
+				7C81FB4C1F53648400878B0C /* TITextInputFormat+Filter.m in Sources */,
+				7C81FB4D1F53648400878B0C /* TITextInputFormat+Formatter.m in Sources */,
+				7C81FB4E1F53648400878B0C /* TITextInputFormat+From.m in Sources */,
+				7C81FB4F1F53648400878B0C /* TITextInputFormat+Map.m in Sources */,
+				7C81FB501F53648400878B0C /* TITextInputFormat+TransformValue.m in Sources */,
+				7C81FB511F53648400878B0C /* TITextInputFormats.m in Sources */,
+				7C81FB521F53648400878B0C /* TITextInputFormats+Plain.m in Sources */,
+				7C81FB531F53648400878B0C /* TITextInputAccessoryFormatter.m in Sources */,
+				7C81FB541F53648400878B0C /* TITextInputFormatter.m in Sources */,
+				7C81FB551F53648400878B0C /* TITextInputFormatter+Filter.m in Sources */,
+				7C81FB561F53648400878B0C /* TITextInputFormatter+Map.m in Sources */,
+				7C81FB571F53648400878B0C /* TITextInputFormatter+Plain.m in Sources */,
+				7C81FB581F53648400878B0C /* TITextInputFormatter+Succeed.m in Sources */,
+				7C81FB591F53648400878B0C /* TITextInputSerializer.m in Sources */,
+				7C81FB5A1F53648400878B0C /* TITextInputSerializer+Formatter.m in Sources */,
+				7C81FB5B1F53648400878B0C /* TITextInputSerializer+Identical.m in Sources */,
+				7C81FB5C1F53648400878B0C /* TITextInputSerializer+Map.m in Sources */,
+				7C81FB5D1F53648400878B0C /* NSError+TextInputKit.m in Sources */,
+				7C81FB5E1F53648400878B0C /* NSRangeExtensions.m in Sources */,
+				7C81FB5F1F53648400878B0C /* TIError.m in Sources */,
+				7C81FB601F53648400878B0C /* TIObjectCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C81FB301F53644200878B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CDF36F51F4431B500271642 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,25 +735,102 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CDF37091F4431B500271642 /* TextInputKit_ObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7C81FB371F53644200878B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C81FB2B1F53644200878B0C /* TextInputKit-ObjC-macOS */;
+			targetProxy = 7C81FB361F53644200878B0C /* PBXContainerItemProxy */;
+		};
 		7CDF37061F4431B500271642 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7CDF36F91F4431B500271642 /* TextInputKit-ObjC */;
+			target = 7CDF36F91F4431B500271642 /* TextInputKit-ObjC-iOS */;
 			targetProxy = 7CDF37051F4431B500271642 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7C81FB3E1F53644200878B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/TextInputKit-ObjC.pch";
+				INFOPLIST_FILE = "TextInputKit-ObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.textinputkit.objc.TextInputKit;
+				PRODUCT_NAME = TextInputKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7C81FB3F1F53644200878B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/TextInputKit-ObjC.pch";
+				INFOPLIST_FILE = "TextInputKit-ObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.textinputkit.objc.TextInputKit;
+				PRODUCT_NAME = TextInputKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7C81FB411F53644200878B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.textinputkit.objc.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7C81FB421F53644200878B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.textinputkit.objc.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		7CDF370C1F4431B500271642 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -545,6 +849,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -564,11 +869,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -578,6 +884,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -596,6 +903,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -609,10 +917,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -622,7 +931,6 @@
 		7CDF370F1F4431B500271642 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -632,8 +940,9 @@
 				INFOPLIST_FILE = "TextInputKit-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "artem.starosvetskiy.TextInputKit-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.textinputkit.objc.TextInputKit;
 				PRODUCT_NAME = TextInputKit;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -641,7 +950,6 @@
 		7CDF37101F4431B500271642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -651,8 +959,9 @@
 				INFOPLIST_FILE = "TextInputKit-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "artem.starosvetskiy.TextInputKit-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.textinputkit.objc.TextInputKit;
 				PRODUCT_NAME = TextInputKit;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -660,26 +969,44 @@
 		7CDF37121F4431B500271642 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "TextInputKit-ObjCTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "artem.starosvetskiy.TextInputKit-ObjCTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.textinputkit.objc.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		7CDF37131F4431B500271642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "TextInputKit-ObjCTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "artem.starosvetskiy.TextInputKit-ObjCTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.textinputkit.objc.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7C81FB3D1F53644200878B0C /* Build configuration list for PBXNativeTarget "TextInputKit-ObjC-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C81FB3E1F53644200878B0C /* Debug */,
+				7C81FB3F1F53644200878B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C81FB401F53644200878B0C /* Build configuration list for PBXNativeTarget "Tests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C81FB411F53644200878B0C /* Debug */,
+				7C81FB421F53644200878B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7CDF36F41F4431B500271642 /* Build configuration list for PBXProject "TextInputKit-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -689,7 +1016,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CDF370E1F4431B500271642 /* Build configuration list for PBXNativeTarget "TextInputKit-ObjC" */ = {
+		7CDF370E1F4431B500271642 /* Build configuration list for PBXNativeTarget "TextInputKit-ObjC-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CDF370F1F4431B500271642 /* Debug */,
@@ -698,7 +1025,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CDF37111F4431B500271642 /* Build configuration list for PBXNativeTarget "TextInputKit-ObjCTests" */ = {
+		7CDF37111F4431B500271642 /* Build configuration list for PBXNativeTarget "Tests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CDF37121F4431B500271642 /* Debug */,
