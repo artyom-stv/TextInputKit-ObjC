@@ -8,7 +8,7 @@
 
 #import "TIObjectCache.h"
 
-#if TARGET_OS_OSX
+#if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
 #endif
 
@@ -33,7 +33,7 @@
         _cache = [[NSCache alloc] init];
         _cacheKey = [[NSObject alloc] init];
 
-#if TARGET_OS_OSX
+#if !TARGET_OS_OSX
         [NSNotificationCenter.defaultCenter addObserver:self
                                                selector:@selector(didReceiveMemoryWarning:)
                                                    name:UIApplicationDidReceiveMemoryWarningNotification
@@ -65,7 +65,7 @@
     }
 }
 
-#if TARGET_OS_OSX
+#if !TARGET_OS_OSX
 - (void)didReceiveMemoryWarning:(NSNotification *)notification {
     [self.cache removeAllObjects];
 }
