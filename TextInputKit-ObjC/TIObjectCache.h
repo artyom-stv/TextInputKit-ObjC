@@ -12,4 +12,8 @@
 
 @property (nonatomic, weak, nullable) ObjectType object;
 
+- (instancetype)initWithDispatchQueue:(dispatch_queue_t)dispatchQueue NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
