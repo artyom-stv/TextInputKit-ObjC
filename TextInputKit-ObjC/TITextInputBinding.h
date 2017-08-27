@@ -11,8 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class TITextInputEvent<ValueType>;
+@class TITextInputFormat<ValueType>;
 
 @interface TITextInputBinding<ValueType> : NSObject
+
+@property (nonatomic, strong, readonly) TITextInputFormat<ValueType> *format;
 
 @property (nonatomic, strong) NSString *text;
 
@@ -21,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) ValueType value;
 
 @property (nonatomic, copy, nullable) void(^eventHandler)(TITextInputEvent<ValueType> *event);
+
+- (instancetype)initWithFormat:(TITextInputFormat<ValueType> *)format NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (void)unbind;
 
 @end
 
