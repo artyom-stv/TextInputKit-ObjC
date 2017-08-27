@@ -231,10 +231,10 @@
 		7CDF371B1F44386A00271642 /* SpecializedTextInput */ = {
 			isa = PBXGroup;
 			children = (
-				7CDF371F1F44388F00271642 /* PhoneNumber */,
-				7CDF371E1F44388400271642 /* BankCardNumber */,
-				7CDF371D1F44387D00271642 /* BankCardHolderName */,
 				7CDF371C1F44387600271642 /* BankCardExpiryDate */,
+				7CDF371D1F44387D00271642 /* BankCardHolderName */,
+				7CDF371E1F44388400271642 /* BankCardNumber */,
+				7CDF371F1F44388F00271642 /* PhoneNumber */,
 			);
 			name = SpecializedTextInput;
 			sourceTree = "<group>";
