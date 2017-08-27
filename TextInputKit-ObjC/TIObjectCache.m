@@ -12,6 +12,8 @@
 #import <UIKit/UIKit.h>
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface TIObjectCache ()
 
 @property (nonatomic, strong, readonly) dispatch_queue_t dispatchQueue;
@@ -51,11 +53,11 @@
     return [self initWithDispatchQueue:dispatch_get_main_queue()];
 }
 
-- (id)object {
+- (nullable id)object {
     return _weakObject;
 }
 
-- (void)setObject:(id)object {
+- (void)setObject:(nullable id)object {
     _weakObject = object;
     if (object) {
         [self.cache setObject:object forKey:self.cacheKey];
@@ -71,3 +73,5 @@
 #endif
 
 @end
+
+NS_ASSUME_NONNULL_END
