@@ -13,3 +13,15 @@
     @throw [NSException exceptionWithName:NSInternalInconsistencyException \
                                    reason:[NSString stringWithFormat:@"Call to abstract method %s", sel_getName(_cmd)] \
                                  userInfo:nil];
+
+#define TICallBlock(block_, ...) \
+    do { \
+        let block = (block_); \
+        if (block) block(__VA_ARGS__); \
+    } while (NO)
+
+#define TICallBlockAndReturn(block_, defaultValue_, ...) \
+    ({ \
+        let block = (block_); \
+        block ? block(__VA_ARGS__) : (defaultValue_); \
+    })
